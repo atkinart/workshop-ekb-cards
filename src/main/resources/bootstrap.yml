@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: card-api
+  cloud:
+    config:
+      enabled: false
+      failFast: false
+      discovery:
+        enabled: false
+        serviceId: config-server
+
+
+eureka:
+  client:
+    registryFetchIntervalSeconds: 5
+    healthcheck:
+      enabled: false
+    enabled: false
+
+logging:
+  level:
+    root: INFO
+
+
+#  serviceUrl:
+#   defaultZone: ${EUREKA_SERV:http://127.0.0.1:8763/eureka/}
+# instance:
+#  leaseRenewalIntervalInSeconds: 10
+#  appname: ${spring.application.name}
+#  virtualHostName : ${spring.application.name}
+#  preferIpAddress: false
+#  metadataMap:
+#   instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
