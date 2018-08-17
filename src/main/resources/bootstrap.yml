@@ -1,6 +1,6 @@
 spring:
   application:
-    name: card-api
+    name: cards-api
   cloud:
     config:
       enabled: false
@@ -21,6 +21,12 @@ logging:
   level:
     root: INFO
 
+server:
+  port: 8080
+
+info:
+  app:
+    name: Cards api info test
 
 #  serviceUrl:
 #   defaultZone: ${EUREKA_SERV:http://127.0.0.1:8763/eureka/}
